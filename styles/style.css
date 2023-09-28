@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Merriweather:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+body {
+  background: url(/images/bg.jpg);
+  background-position: cover fixed;
+  background-size: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20%;
+}
+.header h1 {
+  font-family: "Inter", sans-serif;
+  width: 500px;
+  color: whitesmoke;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header p {
+  font-family: "Merriweather", serif;
+  color: whitesmoke;
+  margin-bottom: 50px;
+}
+.header i {
+  border: 1px solid whitesmoke;
+  padding: 15px 20px;
+  border-radius: 100px;
+  color: whitesmoke;
+}
+
+.nav {
+  margin: 0 10%;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+}
+.nav ul {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
