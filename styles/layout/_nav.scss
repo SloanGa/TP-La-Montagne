@@ -1,10 +1,51 @@
 .nav {
-  margin: 0 10%;
+  margin: 0 15%;
   color: whitesmoke;
   display: flex;
   justify-content: space-between;
+  background: rgba(255, 255, 255, 0.196);
+  height: 60px;
 
-  ul {
+  .navleft {
+    width: 70%;
+    ul {
+      width: 80%;
+      height: 60px;
+      display: flex;
+      text-transform: uppercase;
+      font-family: "Inter", sans-serif;
+      font-size: 0.8rem;
+    }
+    li {
+      height: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      &:hover {
+        background: rgba(245, 245, 245, 0.505);
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .navright {
+    width: 30%;
     display: flex;
+    i {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      font-size: 1.2rem;
+      &:hover {
+        background: rgba(245, 245, 245, 0.505);
+        color: black;
+        cursor: pointer;
+      }
+    }
   }
 }

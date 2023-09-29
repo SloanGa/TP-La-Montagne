@@ -1,5 +1,6 @@
 body {
   background: url(/images/bg.jpg);
-  background-position: cover fixed;
-  background-size: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
