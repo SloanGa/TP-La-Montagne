@@ -8,7 +8,7 @@
 body {
   background: url(/images/bg.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -17,7 +17,7 @@ body {
   justify-content: center;
 }
 
-button {
+.main button {
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
   padding: 10px 30px;
@@ -25,11 +25,89 @@ button {
   border: 2px solid black;
   margin-bottom: 50px;
 }
-button:hover {
+.main button:hover {
   background: black;
   color: whitesmoke;
   cursor: pointer;
   transition: 0.5s;
+}
+
+footer button {
+  color: rgb(80, 79, 79);
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  text-align: center;
+  border: 2px solid rgb(80, 79, 79);
+  margin: 0 10%;
+}
+footer button:hover {
+  background: rgb(80, 79, 79);
+  color: whitesmoke;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  color: rgb(80, 79, 79);
+}
+
+p,
+address {
+  font-family: "Merriweather", serif;
+  color: rgb(80, 79, 79);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10%;
+}
+form textarea {
+  border: 1px solid rgba(0, 0, 0, 0.297);
+  border-radius: 5px;
+  resize: none;
+}
+form label {
+  padding: 10px;
+}
+form input {
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.297);
+  border-radius: 5px;
+}
+
+.navright i {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.navright i:hover {
+  background: rgba(245, 245, 245, 0.505);
+  color: black;
+  cursor: pointer;
+}
+
+.contact .logo1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 25px;
+}
+.contact .logo1 i {
+  border: 1px solid rgba(0, 0, 0, 0.119);
+  font-size: 1.1rem;
+  padding: 10px 10px;
+  border-radius: 50px;
+}
+.contact .logo1 i:hover {
+  background: rgba(245, 245, 245, 0.505);
+  color: black;
+  cursor: pointer;
 }
 
 .header {
@@ -97,19 +175,6 @@ button:hover {
 .nav .navright {
   width: 30%;
   display: flex;
-}
-.nav .navright i {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  font-size: 1.2rem;
-}
-.nav .navright i:hover {
-  background: rgba(245, 245, 245, 0.505);
-  color: black;
-  cursor: pointer;
 }
 
 .main {
@@ -202,4 +267,37 @@ button:hover {
 }
 .main .mainbottom .mbr {
   margin: 0 10%;
+}
+
+footer {
+  height: 500px;
+  margin: 0 15%;
+  margin-bottom: 10px;
+  background: rgb(224, 224, 224);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+footer .contact {
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  align-items: center;
+  border-left: 1px solid rgba(0, 0, 0, 0.119);
+}
+footer .contact #address,
+footer .contact #phone,
+footer .contact #email,
+footer .contact #social {
+  display: flex;
+  align-items: center;
+  padding: 40px 20% 50px 10%;
+}
+footer .contact p {
+  padding-left: 60px;
+}
+footer .contact address {
+  padding-left: 40px;
+}
+footer .contact .boxborder {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.119);
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+footer {
+  height: 500px;
+  margin: 0 15%;
+  margin-bottom: 10px;
+  background: rgb(224, 224, 224);
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .contact {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    align-items: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.119);
+
+    #address,
+    #phone,
+    #email,
+    #social {
+      display: flex;
+      align-items: center;
+      padding: 40px 20% 50px 10%;
+    }
+    p {
+      padding-left: 60px;
+    }
+
+    address {
+      padding-left: 40px;
+    }
+    .boxborder {
+      display: flex;
+
+      border-bottom: 1px solid rgba(0, 0, 0, 0.119);
+    }
+  }
+}

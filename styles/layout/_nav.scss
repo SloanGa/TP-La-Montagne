@@ -34,18 +34,5 @@
   .navright {
     width: 30%;
     display: flex;
-    i {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-      font-size: 1.2rem;
-      &:hover {
-        background: rgba(245, 245, 245, 0.505);
-        color: black;
-        cursor: pointer;
-      }
-    }
   }
 }

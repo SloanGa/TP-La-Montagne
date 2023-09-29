@@ -1,0 +1,30 @@
+label {
+  font-family: "Inter", sans-serif;
+  color: rgb(80, 79, 79);
+}
+
+p,
+address {
+  font-family: "Merriweather", serif;
+  color: rgb(80, 79, 79);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10%;
+  textarea {
+    border: 1px solid rgba(0, 0, 0, 0.297);
+    border-radius: 5px;
+    resize: none;
+  }
+  label {
+    padding: 10px;
+  }
+
+  input {
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.297);
+    border-radius: 5px;
+  }
+}

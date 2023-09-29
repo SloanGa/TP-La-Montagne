@@ -2,19 +2,39 @@
   display: flex;
   justify-content: center;
 }
+.main {
+  button {
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: 50px;
 
-button {
-  font-family: "Inter", sans-serif;
-  text-transform: uppercase;
-  padding: 10px 30px;
-  text-align: center;
-  border: 2px solid black;
-  margin-bottom: 50px;
+    &:hover {
+      background: black;
+      color: whitesmoke;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+  }
+}
 
-  &:hover {
-    background: black;
-    color: whitesmoke;
-    cursor: pointer;
-    transition: 0.5s;
+footer {
+  button {
+    color: rgb(80, 79, 79);
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    text-align: center;
+    border: 2px solid rgb(80, 79, 79);
+    margin: 0 10%;
+
+    &:hover {
+      background: rgb(80, 79, 79);
+      color: whitesmoke;
+      cursor: pointer;
+      transition: 0.5s;
+    }
   }
 }
