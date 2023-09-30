@@ -3,13 +3,11 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  box-sizing: border-box;
 }
 
 body {
-  background: url(/images/bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(/images/bg.jpg) fixed center/cover;
 }
 
 .btn {
@@ -46,6 +44,24 @@ footer button:hover {
   color: whitesmoke;
   cursor: pointer;
   transition: 0.5s;
+}
+
+#img-1 {
+  width: 80%;
+  margin: 50px 10%;
+  height: 80%;
+}
+
+#img-2 {
+  width: 90%;
+  margin: 30px 5%;
+  height: 40%;
+}
+
+#img-3 {
+  width: 90%;
+  margin: 30px 5%;
+  height: 40%;
 }
 
 label {
@@ -91,6 +107,11 @@ form input {
   color: black;
   cursor: pointer;
 }
+@media screen and (max-width: 900px) {
+  .navright i {
+    position: absolute;
+  }
+}
 
 .contact .logo1 {
   width: 100%;
@@ -115,6 +136,8 @@ form input {
   flex-direction: column;
   align-items: center;
   margin: 0 20%;
+  position: relative;
+  min-height: 93.5vh;
 }
 .header h1 {
   font-family: "Inter", sans-serif;
@@ -126,6 +149,19 @@ form input {
   margin-bottom: 50px;
   text-align: center;
   text-transform: uppercase;
+  transform: translateY(40px);
+  animation: headeranim 1.5s forwards;
+}
+@media screen and (max-width: 700px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+}
+@keyframes headeranim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .header p {
   font-family: "Merriweather", serif;
@@ -161,11 +197,15 @@ form input {
 }
 .nav .navleft li {
   height: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px;
   display: flex;
   align-items: center;
   text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .nav .navleft li {
+    font-size: 0.7rem;
+  }
 }
 .nav .navleft li:hover {
   background: rgba(245, 245, 245, 0.505);
@@ -175,6 +215,11 @@ form input {
 .nav .navright {
   width: 30%;
   display: flex;
+}
+@media screen and (max-width: 700px) {
+  .nav .navright {
+    display: none;
+  }
 }
 
 .main {
@@ -189,6 +234,11 @@ form input {
   font-size: 2.4rem;
   margin: 0 25%;
   padding-bottom: 40px;
+}
+@media screen and (max-width: 700px) {
+  .main .maintop h1 {
+    font-size: 1rem;
+  }
 }
 .main .maintop p {
   font-family: "Merriweather", serif;
@@ -219,25 +269,16 @@ form input {
   height: 0;
   margin: 0 30px;
 }
-.main #img-1 {
-  width: 80%;
-  margin: 50px 10%;
-  height: 700px;
-}
-.main #img-2 {
-  width: 90%;
-  margin: 30px 5%;
-  height: 350px;
-}
-.main #img-3 {
-  width: 90%;
-  margin: 30px 5%;
-  height: 350px;
-}
 .main .mainbottom {
   display: grid;
   grid-template-columns: 50% 50%;
   border-top: 1px solid rgba(0, 0, 0, 0.119);
+  min-height: 800px;
+}
+@media screen and (max-width: 700px) {
+  .main .mainbottom {
+    display: block;
+  }
 }
 .main .mainbottom .date {
   padding: 20px 0px;
@@ -252,6 +293,11 @@ form input {
   text-transform: uppercase;
   font-size: 1.2rem;
   margin: 0 20%;
+}
+@media screen and (max-width: 700px) {
+  .main .mainbottom h2 {
+    font-size: 1rem;
+  }
 }
 .main .mainbottom p {
   font-family: "Merriweather", serif;
@@ -277,6 +323,12 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+@media screen and (max-width: 900px) {
+  footer {
+    grid-template-columns: 1fr;
+    min-height: 1200px;
+  }
+}
 footer .contact {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
@@ -300,4 +352,9 @@ footer .contact address {
 footer .contact .boxborder {
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, 0.119);
+}
+@media screen and (max-width: 900px) {
+  footer .contact .boxborder #address {
+    border-top: 1px solid rgba(0, 0, 0, 0.119);
+  }
 }/*# sourceMappingURL=style.css.map */
